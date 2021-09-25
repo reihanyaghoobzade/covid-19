@@ -1,0 +1,206 @@
+$bg-color: #f7f1f1;
+$header-color: #035755;
+$sub-header-color: #fa5652;
+$dark-color: #616060;
+$nvt: #fb4c47;
+$nb-color: #ff483d;
+$light-pink: rgba(250, 86, 82, 0.15);
+$main-head: #0c6c44;
+$content-color: #415e56;
+$light-color: rgb(247, 244, 244);
+$rhd-font: Red Hat Display;
+@font-face {
+    font-family: Red Hat Display;
+    src: url("../fonts/RedHatDisplay-Bold.ttf");
+    src: url("../fonts/RedHatDisplay-Black.ttf");
+    src: url("../fonts/RedHatDisplay-Medium.ttf");
+    src: url("../fonts/RedHatDisplay-Regular.ttf");
+}
+
+@keyframes scale {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 600%);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@mixin reset-a {
+    color: $header-color;
+    font-family: $rhd-font;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+@mixin flex-1($dir-f,
+$dir-a) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: $dir-a;
+    justify-content: $dir-f;
+}
+
+@mixin flex-2($dir-f,
+$dir-a) {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: $dir-f;
+    align-items: $dir-a;
+}
+
+@mixin header($weight,
+$size,
+$color,
+$transform) {
+    font-family: $rhd-font;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+    text-transform: $transform;
+    text-align: justify;
+}
+
+%sub-header {
+    .sub-header {
+        @include header(bold,
+        1.2em,
+        $sub-header-color,
+        capitalize);
+        span {
+            text-transform: uppercase;
+        }
+        @media only screen and (max-width: 1200px) {
+            @include header(bold,
+            1em,
+            $sub-header-color,
+            capitalize);
+        }
+        @media only screen and (max-width: 1100px) {
+            @include header(bold,
+            0.9em,
+            $sub-header-color,
+            capitalize);
+        }
+        @media only screen and (max-width: 1000px) {
+            @include header(bold,
+            1.5em,
+            $sub-header-color,
+            capitalize);
+        }
+        @media only screen and (max-width: 600px) {
+            @include header(bold,
+            1em,
+            $sub-header-color,
+            capitalize);
+        }
+    }
+}
+
+%main-head {
+    .main-head {
+        @include header(bold,
+        2.5rem,
+        $header-color,
+        capitalize);
+        margin-bottom: 2rem;
+        @media only screen and (max-width: 1000px) {
+            @include header(bold, 2.3rem, $header-color, capitalize);
+            margin-bottom: 1rem;
+        }
+        @media only screen and (max-width: 600px) {
+            @include header(bold,
+            1.5rem,
+            $header-color,
+            capitalize);
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+%content {
+    .content {
+        @include header(normal,
+        0.8em,
+        $dark-color,
+        capitalize);
+        line-height: 2rem;
+        word-spacing: 0.2rem;
+        span {
+            text-transform: uppercase;
+        }
+        @media only screen and (max-width: 1200px) {
+            @include header(normal,
+            0.8em,
+            $dark-color,
+            capitalize);
+        }
+        @media only screen and (max-width: 1000px) {
+            @include header(normal,
+            0.9em,
+            $dark-color,
+            capitalize);
+        }
+        @media only screen and (max-width: 600px) {
+            @include header(bold,
+            0.7em,
+            $dark-color,
+            capitalize);
+        }
+    }
+}
+
+%center-header {
+    .header {
+        @include flex-1(center,
+        center);
+    }
+    .text {
+        @extend %sub-header;
+        @extend %main-head;
+        @extend %content;
+        width: 33vw;
+        @media screen and(max-width: 992px) {
+            width: 70%;
+        }
+        height: auto;
+        .sub-header,
+        .main-head,
+        .content {
+            text-align: center;
+        }
+    }
+}
+
+%box-shadow {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+    &::before {
+        content: "";
+        position: absolute;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        top: 10px;
+        bottom: 10px;
+    }
+}
+
+body {
+    background-color: $bg-color;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
