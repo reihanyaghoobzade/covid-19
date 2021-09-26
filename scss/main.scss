@@ -80,7 +80,7 @@ header {
             .name {
                 margin: 0 0.3rem;
                 cursor: pointer;
-                @include header(bold, 1em, $header-color, uppercase);
+                @include header(bold, 1em, $header-color);
             }
             img {
                 margin-left: 4rem;
@@ -177,14 +177,12 @@ header {
 }
 
 .about-us {
+    margin-bottom: 2rem;
     .text {
         @extend %sub-header;
         @extend %main-head;
         @extend %content;
         position: relative;
-        @media only screen and (max-width: 992px) {
-            margin-bottom: 2rem;
-        }
         .content {
             margin-bottom: 1rem;
         }
@@ -192,11 +190,11 @@ header {
             font-family: $rhd-font;
             color: $sub-header-color;
             font-weight: bold;
-            text-transform: capitalize;
             background-color: $light-pink;
             border: 1px solid $light-pink;
             border-radius: 2.5rem;
             padding: 0.6rem 2.2rem;
+            float: right;
             transition: 0.2s ease-in-out;
             &:hover {
                 letter-spacing: 1px;
@@ -316,7 +314,7 @@ header {
         position: relative;
     }
     .circle {
-        @include header(bold, 1.5rem, $sub-header-color, uppercase);
+        @include header(bold, 1.5rem, $sub-header-color);
         position: absolute;
         width: 50px;
         height: 50px;
@@ -356,7 +354,7 @@ header {
     .img {
         @include flex-1(center, center);
         @media screen and (max-width: 992px) {
-            @include header(bold, 1rem, $nvt, uppercase);
+            @include header(bold, 1rem, $nvt);
             &-1 {
                 order: 0;
             }
@@ -376,7 +374,7 @@ header {
         @extend %content;
         @include flex-2(center, flex-start);
         @media screen and (max-width: 992px) {
-            @include header(bold, 1rem, $nvt, uppercase);
+            @include header(bold, 1rem, $nvt);
             &-1 {
                 order: 1;
             }
@@ -435,7 +433,7 @@ header {
         border-radius: 0.1rem;
         height: 100%;
         p {
-            @include header(bold, 1.5rem, $header-color, capitalize);
+            @include header(bold, 1.5rem, $header-color);
             display: inline-block;
             margin-top: 0.5rem;
         }
@@ -471,7 +469,7 @@ header {
                 padding: 0.5rem;
                 &:nth-child(2),
                 &:nth-child(3) {
-                    @include header(bold, 0.8rem, $header-color, uppercase);
+                    @include header(bold, 0.8rem, $header-color);
                 }
             }
             &:hover {
@@ -598,7 +596,7 @@ footer {
         .name {
             display: inline-block;
             margin: 0 0.3rem;
-            @include header(bold, 1em, $header-color, uppercase);
+            @include header(bold, 1em, $header-color);
         }
     }
     .content {

@@ -64,68 +64,61 @@ $dir-a) {
 
 @mixin header($weight,
 $size,
-$color,
-$transform) {
+$color) {
     font-family: $rhd-font;
     font-weight: $weight;
     font-size: $size;
     color: $color;
-    text-transform: $transform;
     text-align: justify;
 }
 
 %sub-header {
     .sub-header {
+        direction: rtl;
         @include header(bold,
         1.2em,
-        $sub-header-color,
-        capitalize);
+        $sub-header-color);
         span {
-            text-transform: uppercase;
+            font-weight: bold;
         }
         @media only screen and (max-width: 1200px) {
             @include header(bold,
             1em,
-            $sub-header-color,
-            capitalize);
+            $sub-header-color);
         }
         @media only screen and (max-width: 1100px) {
             @include header(bold,
             0.9em,
-            $sub-header-color,
-            capitalize);
+            $sub-header-color);
         }
         @media only screen and (max-width: 1000px) {
             @include header(bold,
             1.5em,
-            $sub-header-color,
-            capitalize);
+            $sub-header-color);
         }
         @media only screen and (max-width: 600px) {
             @include header(bold,
             1em,
-            $sub-header-color,
-            capitalize);
+            $sub-header-color);
         }
     }
 }
 
 %main-head {
     .main-head {
+        direction: rtl;
         @include header(bold,
         2.5rem,
-        $header-color,
-        capitalize);
+        $header-color);
         margin-bottom: 2rem;
         @media only screen and (max-width: 1000px) {
-            @include header(bold, 2.3rem, $header-color, capitalize);
+            @include header(bold, 2.3rem, $header-color);
             margin-bottom: 1rem;
         }
         @media only screen and (max-width: 600px) {
             @include header(bold,
             1.5rem,
-            $header-color,
-            capitalize);
+            $header-color);
             margin-bottom: 1rem;
         }
     }
@@ -133,10 +126,10 @@ $transform) {
 
 %content {
     .content {
+        direction: rtl;
         @include header(normal,
         0.8em,
-        $dark-color,
-        capitalize);
+        $dark-color);
         line-height: 2rem;
         word-spacing: 0.2rem;
         span {
@@ -145,20 +138,17 @@ $transform) {
         @media only screen and (max-width: 1200px) {
             @include header(normal,
             0.8em,
-            $dark-color,
-            capitalize);
+            $dark-color);
         }
         @media only screen and (max-width: 1000px) {
             @include header(normal,
             0.9em,
-            $dark-color,
-            capitalize);
+            $dark-color);
         }
         @media only screen and (max-width: 600px) {
             @include header(bold,
             0.7em,
-            $dark-color,
-            capitalize);
+            $dark-color);
         }
     }
 }
