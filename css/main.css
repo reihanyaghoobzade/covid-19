@@ -25,7 +25,6 @@
 }
 
 .contagion .text .sub-header, .symptomps .text .sub-header, .solutions .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
-  direction: rtl;
   font-family: Red Hat Display;
   font-weight: bold;
   font-size: 1.2em;
@@ -83,7 +82,6 @@
 }
 
 .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head, .subscrib .main-head {
-  direction: rtl;
   font-family: Red Hat Display;
   font-weight: bold;
   font-size: 2.5rem;
@@ -118,7 +116,6 @@
 }
 
 .contagion .text .content, .symptomps .text .content, .solutions .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content, .solutions .img-pre .content {
-  direction: rtl;
   font-family: Red Hat Display;
   font-weight: normal;
   font-size: 0.8em;
@@ -607,17 +604,18 @@ header .text .header-text button:hover {
   width: 50px;
   height: 50px;
   top: 0;
-  left: -30%;
+  right: -7vw;
   background-color: #fdb7b5;
   border-radius: 50%;
 }
 
-.solutions .left-mid {
+.solutions .left-img {
   position: absolute;
-  left: -31%;
+  left: -10%;
   top: 10%;
-  width: 50%;
+  width: 10%;
   height: 50%;
+  padding: 0;
   animation-name: scale;
   animation-duration: 12s;
   animation-direction: alternate;
@@ -628,7 +626,7 @@ header .text .header-text button:hover {
 
 .solutions .full {
   position: absolute;
-  right: -20%;
+  right: -35%;
   top: 0;
   width: 28%;
   animation-name: rotate;
@@ -639,7 +637,7 @@ header .text .header-text button:hover {
 
 .solutions .mid {
   position: absolute;
-  right: -30%;
+  right: -44%;
   width: 25%;
 }
 
@@ -652,15 +650,7 @@ header .text .header-text button:hover {
   justify-content: center;
 }
 
-@media screen and (max-width: 992px) {
-  .solutions .img {
-    font-family: Red Hat Display;
-    font-weight: bold;
-    font-size: 1rem;
-    color: #fb4c47;
-    text-transform: uppercase;
-    text-align: justify;
-  }
+@media screen and (max-width: 991px) {
   .solutions .img-1 {
     order: 0;
   }
@@ -684,15 +674,7 @@ header .text .header-text button:hover {
   align-items: flex-start;
 }
 
-@media screen and (max-width: 992px) {
-  .solutions .img-pre {
-    font-family: Red Hat Display;
-    font-weight: bold;
-    font-size: 1rem;
-    color: #fb4c47;
-    text-transform: uppercase;
-    text-align: justify;
-  }
+@media screen and (max-width: 991px) {
   .solutions .img-pre-1 {
     order: 1;
   }
