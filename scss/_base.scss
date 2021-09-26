@@ -76,6 +76,7 @@ $transform) {
 
 %sub-header {
     .sub-header {
+        direction: rtl;
         @include header(bold,
         1.2em,
         $sub-header-color,
@@ -112,6 +113,7 @@ $transform) {
 
 %main-head {
     .main-head {
+        direction: rtl;
         @include header(bold,
         2.5rem,
         $header-color,
@@ -133,6 +135,7 @@ $transform) {
 
 %content {
     .content {
+        direction: rtl;
         @include header(normal,
         0.8em,
         $dark-color,

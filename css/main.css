@@ -25,6 +25,7 @@
 }
 
 .contagion .text .sub-header, .symptomps .text .sub-header, .solutions .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
+  direction: rtl;
   font-family: Red Hat Display;
   font-weight: bold;
   font-size: 1.2em;
@@ -82,6 +83,7 @@
 }
 
 .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head, .subscrib .main-head {
+  direction: rtl;
   font-family: Red Hat Display;
   font-weight: bold;
   font-size: 2.5rem;
@@ -116,6 +118,7 @@
 }
 
 .contagion .text .content, .symptomps .text .content, .solutions .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content, .solutions .img-pre .content {
+  direction: rtl;
   font-family: Red Hat Display;
   font-weight: normal;
   font-size: 0.8em;
