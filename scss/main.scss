@@ -1,133 +1,128 @@
 @import "base";
 header {
-    .nav {
-        margin-bottom: 2rem;
-        padding: 0.6rem 0;
-        &-collapse {
-            position: relative;
-            .checkbox:checked~.navigation {
-                display: block;
-                left: 0;
-            }
-            .checkbox:checked~.hamburger-menu {
-                .menu {
-                    transform: rotateZ(90deg);
-                    &-line {
-                        background-color: $bg-color;
-                    }
-                    .line-1 {
-                        transform: rotateZ(-40deg);
-                    }
-                    .line-2 {
-                        opacity: 0;
-                    }
-                    .line-3 {
-                        transform: rotateZ(40deg);
-                    }
+    margin-bottom: 2rem;
+    padding: 0.6rem 0;
+    .nav-collapse {
+        position: relative;
+        .checkbox:checked~.navigation {
+            display: block;
+            right: -1vw;
+        }
+        .checkbox:checked~.hamburger-menu {
+            .menu {
+                transform: rotateZ(90deg);
+                &-line {
+                    background-color: $bg-color;
+                }
+                .line-1 {
+                    transform: rotateZ(-40deg);
+                }
+                .line-2 {
+                    opacity: 0;
+                }
+                .line-3 {
+                    transform: rotateZ(40deg);
                 }
             }
-            .hamburger-menu {
-                position: absolute;
-                width: 35px;
-                height: 35px;
-                z-index: 20;
-                margin-left: 2rem;
-                transition: all 0.8s cubic-bezier(1, 0, 0, 1);
-                .menu {
-                    @include flex-2(space-around, center);
+        }
+        .hamburger-menu {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            z-index: 20;
+            margin-left: 2rem;
+            transition: all 0.8s cubic-bezier(1, 1, 1, 1);
+            .menu {
+                @include flex-2(space-around, center);
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                transition: transform 0.5s;
+                &-line {
                     width: 100%;
-                    height: 100%;
-                    cursor: pointer;
-                    transition: transform 0.5s;
-                    &-line {
-                        width: 100%;
-                        height: 0.35rem;
-                        background-color: $dark-color;
-                        transition: all 0.5s 0.5s;
-                        transform-origin: right;
-                    }
+                    height: 0.35rem;
+                    background-color: $dark-color;
+                    transition: all 0.5s 0.5s;
+                    transform-origin: right;
                 }
             }
-            .navigation {
-                position: absolute;
-                background-color: lighten($dark-color, 5%);
-                width: 50vw;
-                height: auto;
-                top: 0;
-                left: -60vw;
-                transition: left 0.8s cubic-bezier(1, 0, 0, 1);
-                .navbar-list {
-                    list-style: none;
-                    margin-top: 3.5rem;
-                    .navbar-link {
-                        margin: 0.8rem 0;
-                        a {
-                            @include reset-a;
-                            color: $nvt;
-                            transition: letter-spacing .5s;
-                            &:hover {
-                                letter-spacing: 1px;
-                            }
+        }
+        .navigation {
+            position: absolute;
+            background-color: lighten($dark-color, 5%);
+            width: 30vw;
+            height: auto;
+            top: 0;
+            right: -52vw;
+            transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+            .navbar-list {
+                list-style: none;
+                margin-top: 3.5rem;
+                .navbar-link {
+                    margin: 0.8rem 0;
+                    a {
+                        @include reset-a;
+                        color: $nvt;
+                        transition: letter-spacing .5s;
+                        &:hover {
+                            letter-spacing: 1px;
                         }
                     }
                 }
             }
         }
-        &-brand {
+    }
+    .nav-brand {
+        .name {
+            margin: 0 0.3rem;
+            cursor: pointer;
+            @include header(bold, 1em, $header-color, uppercase);
+        }
+        .logo {
+            margin: 0 4rem 0 1rem;
+            cursor: pointer;
             @media only screen and (max-width: 992px) {
-                justify-content: flex-end !important;
-            }
-            .name {
-                margin: 0 0.3rem;
-                cursor: pointer;
-                @include header(bold, 1em, $header-color, uppercase);
-            }
-            img {
-                margin-left: 4rem;
-                cursor: pointer;
-                @media only screen and (max-width: 992px) {
-                    margin-right: 2rem;
-                }
+                margin-left: 1rem;
             }
         }
-        &-items {
-            .active::before {
-                content: "";
-                width: 6px;
-                height: 6px;
-                background-color: $sub-header-color;
-                position: absolute;
-                border-radius: 50%;
-                left: calc(50% - 3px);
-                bottom: -10px;
+    }
+    .nav {
+        .active::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: $sub-header-color;
+            position: absolute;
+            border-radius: 50%;
+            left: calc(50% - 3px);
+            bottom: -10px;
+        }
+        a {
+            margin: 0 0.8rem;
+            @include reset-a;
+            transition: 0.2s ease-in-out;
+            position: relative;
+            &:first-child {
+                color: $nvt;
             }
-            a {
-                margin: 0 0.8rem;
-                @include reset-a;
-                transition: 0.2s ease-in-out;
-                position: relative;
-                &:first-child {
-                    color: $nvt;
-                }
-                &:hover {
-                    letter-spacing: 1px;
-                }
+            &:hover {
+                letter-spacing: 1px;
             }
-            button {
-                color: $nb-color;
-                background-color: $bg-color;
-                font-family: $rhd-font;
-                text-transform: capitalize;
-                border: 1px solid $nb-color;
-                border-radius: 2.5rem;
-                margin: 0 4rem 0 0.8rem;
-                padding: 0.5rem 1.5rem;
-                transition: 0.2s ease-in-out;
-                &:hover {
-                    color: $bg-color;
-                    background-color: $nvt;
-                    letter-spacing: 1px;
-                }
+        }
+        button {
+            color: $nb-color;
+            background-color: $bg-color;
+            font-family: $rhd-font;
+            text-transform: capitalize;
+            border: 1px solid $nb-color;
+            border-radius: 2.5rem;
+            margin: 0 .8rem 0 4rem;
+            padding: 0.5rem 1.5rem;
+            transition: 0.2s ease-in-out;
+            &:hover {
+                color: $bg-color;
+                background-color: $nvt;
+                letter-spacing: 1px;
             }
         }
     }
