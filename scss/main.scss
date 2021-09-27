@@ -397,3 +397,92 @@ header {
         }
     }
 }
+
+.map {
+    .rel {
+        position: relative;
+    }
+    .btns {
+        position: absolute;
+        right: 0;
+        button {
+            background-color: $light-color;
+            border: 0;
+            &:first-child {
+                border-top-left-radius: 0.2rem;
+                border-top-right-radius: 0.2rem;
+                padding-top: 0.3rem;
+            }
+            &:last-child {
+                border-bottom-left-radius: 0.2rem;
+                border-bottom-right-radius: 0.2rem;
+                padding-bottom: 0.4rem;
+            }
+        }
+    }
+    .search {
+        position: absolute;
+        left: 0;
+        button {
+            padding: 0.3rem;
+            background-color: $light-color;
+            border: 0;
+            border-radius: 0.2rem;
+        }
+    }
+    .order {
+        @media screen and (max-width: 992px) {
+            order: 1;
+        }
+    }
+    .countries {
+        @extend %box-shadow;
+        background-color: $light-color;
+        border-radius: 0.1rem;
+        height: 100%;
+        p {
+            @include header(bold, 1.5rem, $header-color);
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+        .action {
+            @extend %box-shadow;
+            margin-top: 0.5rem;
+            float: left;
+            button {
+                display: inline-block;
+                width: 100%;
+                padding: 0.2rem 0.6rem 0.4rem 0.6rem;
+                background-color: $light-color;
+                border: 0;
+                &:first-child {
+                    border-top-left-radius: 0.2rem;
+                    border-bottom-left-radius: 0.2rem;
+                }
+                &:last-child {
+                    border-top-right-radius: 0.2rem;
+                    border-bottom-right-radius: 0.2rem;
+                }
+            }
+        }
+        @media screen and (max-width: 992px) {
+            margin-top: 2rem;
+        }
+    }
+    table {
+        margin: 1rem 0;
+        width: 100%;
+        tr {
+            td {
+                padding: 0.5rem;
+                &:nth-child(2),
+                &:nth-child(3) {
+                    @include header(bold, 0.8rem, $header-color);
+                }
+            }
+            &:hover {
+                background-color: $bg-color;
+            }
+        }
+    }
+}

@@ -181,6 +181,18 @@
   text-align: center;
 }
 
+.map .countries, .map .countries .action {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+}
+
+.map .countries::before, .map .countries .action::before {
+  content: "";
+  position: absolute;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  top: 10px;
+  bottom: 10px;
+}
+
 body {
   background-color: #f7f1f1;
 }
@@ -675,5 +687,115 @@ header .text .header-text button:hover {
   .solutions .img-pre-4 {
     order: 7;
   }
+}
+
+.map .rel {
+  position: relative;
+}
+
+.map .btns {
+  position: absolute;
+  right: 0;
+}
+
+.map .btns button {
+  background-color: #f7f4f4;
+  border: 0;
+}
+
+.map .btns button:first-child {
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  padding-top: 0.3rem;
+}
+
+.map .btns button:last-child {
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  padding-bottom: 0.4rem;
+}
+
+.map .search {
+  position: absolute;
+  left: 0;
+}
+
+.map .search button {
+  padding: 0.3rem;
+  background-color: #f7f4f4;
+  border: 0;
+  border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .map .order {
+    order: 1;
+  }
+}
+
+.map .countries {
+  background-color: #f7f4f4;
+  border-radius: 0.1rem;
+  height: 100%;
+}
+
+.map .countries p {
+  font-family: Red Hat Display;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #035755;
+  text-align: justify;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.map .countries .action {
+  margin-top: 0.5rem;
+  float: left;
+}
+
+.map .countries .action button {
+  display: inline-block;
+  width: 100%;
+  padding: 0.2rem 0.6rem 0.4rem 0.6rem;
+  background-color: #f7f4f4;
+  border: 0;
+}
+
+.map .countries .action button:first-child {
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
+
+.map .countries .action button:last-child {
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .map .countries {
+    margin-top: 2rem;
+  }
+}
+
+.map table {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.map table tr td {
+  padding: 0.5rem;
+}
+
+.map table tr td:nth-child(2), .map table tr td:nth-child(3) {
+  font-family: Red Hat Display;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #035755;
+  text-align: justify;
+}
+
+.map table tr:hover {
+  background-color: #f7f1f1;
 }
 /*# sourceMappingURL=main.css.map */
