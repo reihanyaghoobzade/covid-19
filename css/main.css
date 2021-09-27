@@ -82,7 +82,7 @@
   }
 }
 
-.contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head, .subscrib .main-head {
+.contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head, .subscribe .main-head {
   direction: rtl;
   font-family: Red Hat Display;
   font-weight: bold;
@@ -94,7 +94,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head, .subscrib .main-head {
+  .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head, .subscribe .main-head {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 2.3rem;
@@ -106,7 +106,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head, .subscrib .main-head {
+  .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head, .subscribe .main-head {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 1.5rem;
@@ -168,11 +168,9 @@
 
 .contagion .header, .symptomps .header, .solutions .header {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .contagion .text, .symptomps .text, .solutions .text {
@@ -262,9 +260,7 @@ header .nav-collapse .hamburger-menu {
 
 header .nav-collapse .hamburger-menu .menu {
   display: inline-flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
+  flex-flow: column wrap;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -645,11 +641,9 @@ header .text .header-text button:hover {
 
 .solutions .img {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 992px) {
@@ -677,9 +671,7 @@ header .text .header-text button:hover {
 
 .solutions .img-pre {
   display: inline-flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: flex-start;
 }
@@ -811,25 +803,23 @@ header .text .header-text button:hover {
   background-color: #f7f1f1;
 }
 
-.subscrib {
+.subscribe {
   padding-top: 4rem;
 }
 
-.subscrib .text {
+.subscribe .rel {
   position: relative;
 }
 
-.subscrib .main-head {
+.subscribe .main-head {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
   color: #0c6c44;
 }
 
-.subscrib .up {
+.subscribe .up {
   position: absolute;
   right: -7%;
   top: 0;
@@ -840,23 +830,21 @@ header .text .header-text button:hover {
   animation-iteration-count: linear;
 }
 
-.subscrib .down {
+.subscribe .down {
   position: absolute;
   right: -16.5%;
 }
 
-.subscrib .input {
+.subscribe .input {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
 }
 
-.subscrib .input input {
+.subscribe .input input {
   width: 95%;
   font-family: Red Hat Display;
   font-weight: normal;
@@ -864,35 +852,35 @@ header .text .header-text button:hover {
   background-color: #f9f7f7;
   border: 0.5rem solid #f9f7f7;
   border-radius: 2rem;
-  padding: 0.6rem 19% 0.6rem 2.2rem;
+  padding: 0.6rem 2.2rem 0.6rem 19%;
 }
 
-.subscrib .input input:focus {
+.subscribe .input input:focus {
   outline: 0;
 }
 
 @media only screen and (max-width: 992px) {
-  .subscrib .input input {
-    padding-right: 20%;
+  .subscribe .input input {
+    padding-left: 20%;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  .subscrib .input input {
-    padding-right: 23%;
+  .subscribe .input input {
+    padding-left: 23%;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .subscrib .input input {
-    padding-right: 30%;
+  .subscribe .input input {
+    padding-left: 30%;
   }
 }
 
-.subscrib .input button {
+.subscribe .input button {
   width: 18%;
   position: absolute;
-  right: 2.2rem;
+  left: 2.4rem;
   font-family: Red Hat Display;
   font-weight: normal;
   color: #f7f1f1;
@@ -905,26 +893,26 @@ header .text .header-text button:hover {
 }
 
 @media only screen and (max-width: 1200px) {
-  .subscrib .input button {
-    right: 2rem;
+  .subscribe .input button {
+    left: 2rem;
     padding: 0.6rem 1.7rem;
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  .subscrib .input button {
-    right: 1.7rem;
+  .subscribe .input button {
+    left: 1.7rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .subscrib .input button {
+  .subscribe .input button {
     width: 22%;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .subscrib {
+  .subscribe {
     display: none;
   }
 }
@@ -953,11 +941,9 @@ footer .link a:hover {
 @media screen and (max-width: 992px) {
   footer .link {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
+    flex-flow: row wrap;
     justify-content: flex-end;
+    align-items: center;
   }
   footer .link a {
     margin: 0 1.5rem;
@@ -965,31 +951,17 @@ footer .link a:hover {
 }
 
 footer .fab {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-  justify-content: flex-end;
   height: 100%;
+  justify-content: flex-end;
 }
 
 footer .fab img {
-  margin: 0 0.3rem;
-}
-
-footer .fab img:first-child {
-  margin: 0 0.3rem 0.2rem 0.3rem;
+  margin: 0 .5rem;
 }
 
 @media screen and (max-width: 992px) {
   footer .fab {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 

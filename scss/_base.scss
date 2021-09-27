@@ -45,19 +45,15 @@ $rhd-font: Red Hat Display;
 @mixin flex-1($dir-f,
 $dir-a) {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: $dir-a;
+    flex-flow: row wrap;
     justify-content: $dir-f;
+    align-items: $dir-a;
 }
 
 @mixin flex-2($dir-f,
 $dir-a) {
     display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    flex-flow: column wrap;
     justify-content: $dir-f;
     align-items: $dir-a;
 }
