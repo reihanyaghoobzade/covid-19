@@ -399,7 +399,7 @@ header {
     }
     .btns {
         position: absolute;
-        right: -2vw;
+        right: 0;
         button {
             background-color: $light-color;
             border: 0;
@@ -417,12 +417,17 @@ header {
     }
     .search {
         position: absolute;
-        left: -2vw;
+        left: 0;
         button {
             padding: 0.3rem;
             background-color: $light-color;
             border: 0;
             border-radius: 0.2rem;
+        }
+    }
+    .order {
+        @media screen and (max-width: 992px) {
+            order: 1;
         }
     }
     .countries {
@@ -438,7 +443,7 @@ header {
         .action {
             @extend %box-shadow;
             margin-top: 0.5rem;
-            float: right;
+            float: left;
             button {
                 display: inline-block;
                 width: 100%;
