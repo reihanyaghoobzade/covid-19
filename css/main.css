@@ -24,8 +24,7 @@
   }
 }
 
-.contagion .text .sub-header, .symptomps .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
-  direction: rtl;
+.contagion .text .sub-header, .symptomps .text .sub-header, .solutions .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
   font-family: Red Hat Display;
   font-weight: bold;
   font-size: 1.2em;
@@ -33,12 +32,12 @@
   text-align: justify;
 }
 
-.contagion .text .sub-header span, .symptomps .text .sub-header span, header .text .header-text .sub-header span, .about-us .text .sub-header span {
+.contagion .text .sub-header span, .symptomps .text .sub-header span, .solutions .text .sub-header span, header .text .header-text .sub-header span, .about-us .text .sub-header span {
   font-weight: bold;
 }
 
 @media only screen and (max-width: 1200px) {
-  .contagion .text .sub-header, .symptomps .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
+  .contagion .text .sub-header, .symptomps .text .sub-header, .solutions .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 1em;
@@ -48,7 +47,7 @@
 }
 
 @media only screen and (max-width: 1100px) {
-  .contagion .text .sub-header, .symptomps .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
+  .contagion .text .sub-header, .symptomps .text .sub-header, .solutions .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 0.9em;
@@ -58,7 +57,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .contagion .text .sub-header, .symptomps .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
+  .contagion .text .sub-header, .symptomps .text .sub-header, .solutions .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 1.5em;
@@ -68,7 +67,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .contagion .text .sub-header, .symptomps .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
+  .contagion .text .sub-header, .symptomps .text .sub-header, .solutions .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 1em;
@@ -77,8 +76,7 @@
   }
 }
 
-.contagion .text .main-head, .symptomps .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head {
-  direction: rtl;
+.contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head {
   font-family: Red Hat Display;
   font-weight: bold;
   font-size: 2.5rem;
@@ -88,7 +86,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .contagion .text .main-head, .symptomps .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head {
+  .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 2.3rem;
@@ -99,7 +97,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .contagion .text .main-head, .symptomps .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head {
+  .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 1.5rem;
@@ -109,8 +107,7 @@
   }
 }
 
-.contagion .text .content, .symptomps .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content {
-  direction: rtl;
+.contagion .text .content, .symptomps .text .content, .solutions .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content, .solutions .img-pre .content {
   font-family: Red Hat Display;
   font-weight: normal;
   font-size: 0.8em;
@@ -120,12 +117,12 @@
   word-spacing: 0.2rem;
 }
 
-.contagion .text .content span, .symptomps .text .content span, header .text .header-text .content span, .about-us .text .content span, .contagion-card .content span {
+.contagion .text .content span, .symptomps .text .content span, .solutions .text .content span, header .text .header-text .content span, .about-us .text .content span, .contagion-card .content span, .solutions .img-pre .content span {
   text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1200px) {
-  .contagion .text .content, .symptomps .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content {
+  .contagion .text .content, .symptomps .text .content, .solutions .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content, .solutions .img-pre .content {
     font-family: Red Hat Display;
     font-weight: normal;
     font-size: 0.8em;
@@ -135,7 +132,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .contagion .text .content, .symptomps .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content {
+  .contagion .text .content, .symptomps .text .content, .solutions .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content, .solutions .img-pre .content {
     font-family: Red Hat Display;
     font-weight: normal;
     font-size: 0.9em;
@@ -145,7 +142,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .contagion .text .content, .symptomps .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content {
+  .contagion .text .content, .symptomps .text .content, .solutions .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content, .solutions .img-pre .content {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 0.7em;
@@ -154,7 +151,7 @@
   }
 }
 
-.contagion .header, .symptomps .header {
+.contagion .header, .symptomps .header, .solutions .header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -163,22 +160,24 @@
   justify-content: center;
 }
 
-.contagion .text, .symptomps .text {
+.contagion .text, .symptomps .text, .solutions .text {
   width: 33vw;
   height: auto;
 }
 
 @media screen and (max-width: 992px) {
-  .contagion .text, .symptomps .text {
+  .contagion .text, .symptomps .text, .solutions .text {
     width: 70%;
   }
 }
 
-.contagion .text .sub-header, .symptomps .text .sub-header,
+.contagion .text .sub-header, .symptomps .text .sub-header, .solutions .text .sub-header,
 .contagion .text .main-head,
 .symptomps .text .main-head,
+.solutions .text .main-head,
 .contagion .text .content,
-.symptomps .text .content {
+.symptomps .text .content,
+.solutions .text .content {
   text-align: center;
 }
 
@@ -577,5 +576,104 @@ header .text .header-text button:hover {
 
 .symptomps .shape img {
   position: absolute;
+}
+
+.solutions .rel {
+  position: relative;
+}
+
+.solutions .circle {
+  font-family: Red Hat Display;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fa5652;
+  text-align: justify;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: -7vw;
+  background-color: #fdb7b5;
+  border-radius: 50%;
+}
+
+.solutions .left-img {
+  position: absolute;
+  left: -10%;
+  top: 10%;
+  width: 10%;
+  height: 50%;
+  padding: 0;
+  animation-name: scale;
+  animation-duration: 12s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.solutions .full {
+  position: absolute;
+  right: -35%;
+  top: 0;
+  width: 28%;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.solutions .mid {
+  position: absolute;
+  right: -44%;
+  width: 25%;
+}
+
+.solutions .img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 991px) {
+  .solutions .img-1 {
+    order: 0;
+  }
+  .solutions .img-2 {
+    order: 2;
+  }
+  .solutions .img-3 {
+    order: 4;
+  }
+  .solutions .img-4 {
+    order: 6;
+  }
+}
+
+.solutions .img-pre {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 991px) {
+  .solutions .img-pre-1 {
+    order: 1;
+  }
+  .solutions .img-pre-2 {
+    order: 3;
+  }
+  .solutions .img-pre-3 {
+    order: 5;
+  }
+  .solutions .img-pre-4 {
+    order: 7;
+  }
 }
 /*# sourceMappingURL=main.css.map */
