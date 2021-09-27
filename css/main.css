@@ -24,7 +24,7 @@
   }
 }
 
-.contagion .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
+.contagion .text .sub-header, .symptomps .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
   direction: rtl;
   font-family: Red Hat Display;
   font-weight: bold;
@@ -33,12 +33,12 @@
   text-align: justify;
 }
 
-.contagion .text .sub-header span, header .text .header-text .sub-header span, .about-us .text .sub-header span {
+.contagion .text .sub-header span, .symptomps .text .sub-header span, header .text .header-text .sub-header span, .about-us .text .sub-header span {
   font-weight: bold;
 }
 
 @media only screen and (max-width: 1200px) {
-  .contagion .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
+  .contagion .text .sub-header, .symptomps .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 1em;
@@ -48,7 +48,7 @@
 }
 
 @media only screen and (max-width: 1100px) {
-  .contagion .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
+  .contagion .text .sub-header, .symptomps .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 0.9em;
@@ -58,7 +58,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .contagion .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
+  .contagion .text .sub-header, .symptomps .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 1.5em;
@@ -68,7 +68,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .contagion .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
+  .contagion .text .sub-header, .symptomps .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 1em;
@@ -77,7 +77,7 @@
   }
 }
 
-.contagion .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head {
+.contagion .text .main-head, .symptomps .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head {
   direction: rtl;
   font-family: Red Hat Display;
   font-weight: bold;
@@ -88,7 +88,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .contagion .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head {
+  .contagion .text .main-head, .symptomps .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 2.3rem;
@@ -99,7 +99,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .contagion .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head {
+  .contagion .text .main-head, .symptomps .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 1.5rem;
@@ -109,7 +109,7 @@
   }
 }
 
-.contagion .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content {
+.contagion .text .content, .symptomps .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content {
   direction: rtl;
   font-family: Red Hat Display;
   font-weight: normal;
@@ -120,12 +120,12 @@
   word-spacing: 0.2rem;
 }
 
-.contagion .text .content span, header .text .header-text .content span, .about-us .text .content span, .contagion-card .content span {
+.contagion .text .content span, .symptomps .text .content span, header .text .header-text .content span, .about-us .text .content span, .contagion-card .content span {
   text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1200px) {
-  .contagion .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content {
+  .contagion .text .content, .symptomps .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content {
     font-family: Red Hat Display;
     font-weight: normal;
     font-size: 0.8em;
@@ -135,7 +135,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .contagion .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content {
+  .contagion .text .content, .symptomps .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content {
     font-family: Red Hat Display;
     font-weight: normal;
     font-size: 0.9em;
@@ -145,7 +145,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .contagion .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content {
+  .contagion .text .content, .symptomps .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 0.7em;
@@ -154,7 +154,7 @@
   }
 }
 
-.contagion .header {
+.contagion .header, .symptomps .header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -163,20 +163,22 @@
   justify-content: center;
 }
 
-.contagion .text {
+.contagion .text, .symptomps .text {
   width: 33vw;
   height: auto;
 }
 
 @media screen and (max-width: 992px) {
-  .contagion .text {
+  .contagion .text, .symptomps .text {
     width: 70%;
   }
 }
 
-.contagion .text .sub-header,
+.contagion .text .sub-header, .symptomps .text .sub-header,
 .contagion .text .main-head,
-.contagion .text .content {
+.symptomps .text .main-head,
+.contagion .text .content,
+.symptomps .text .content {
   text-align: center;
 }
 
@@ -558,5 +560,22 @@ header .text .header-text button:hover {
   .contagion .image img {
     left: 6%;
   }
+}
+
+.symptomps {
+  margin: 3rem 0;
+}
+
+.symptomps img {
+  width: 100%;
+}
+
+.symptomps .shape {
+  position: relative;
+  width: 10%;
+}
+
+.symptomps .shape img {
+  position: absolute;
 }
 /*# sourceMappingURL=main.css.map */

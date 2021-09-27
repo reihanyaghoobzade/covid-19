@@ -300,3 +300,18 @@ header {
         }
     }
 }
+
+.symptomps {
+    margin: 3rem 0;
+    @extend %center-header;
+    img {
+        width: 100%;
+    }
+    .shape {
+        position: relative;
+        width: 10%;
+        img {
+            position: absolute;
+        }
+    }
+}
