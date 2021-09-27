@@ -707,16 +707,16 @@ header .text .header-text button:hover {
   }
 }
 
-@media screen and (max-width: 576px) {
-  .map .word-map {
-    margin: 3rem 0;
-  }
+.map .rel {
+  position: relative;
+}
+
+.map .btns {
+  position: absolute;
+  right: -2vw;
 }
 
 .map .btns button {
-  position: relative;
-  width: 90%;
-  left: 270%;
   background-color: #f7f4f4;
   border: 0;
 }
@@ -733,11 +733,13 @@ header .text .header-text button:hover {
   padding-bottom: 0.4rem;
 }
 
+.map .search {
+  position: absolute;
+  left: -2vw;
+}
+
 .map .search button {
-  position: relative;
-  width: 90%;
   padding: 0.3rem;
-  right: 200%;
   background-color: #f7f4f4;
   border: 0;
   border-radius: 0.2rem;
