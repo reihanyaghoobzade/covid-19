@@ -76,7 +76,7 @@
   }
 }
 
-.contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head {
+.contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head, .subscribe .main-head {
   font-family: Red Hat Display;
   font-weight: bold;
   font-size: 2.5rem;
@@ -86,7 +86,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head {
+  .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head, .subscribe .main-head {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 2.3rem;
@@ -97,7 +97,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head {
+  .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head, .subscribe .main-head {
     font-family: Red Hat Display;
     font-weight: bold;
     font-size: 1.5rem;
@@ -153,11 +153,9 @@
 
 .contagion .header, .symptomps .header, .solutions .header {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .contagion .text, .symptomps .text, .solutions .text {
@@ -247,9 +245,7 @@ header .nav-collapse .hamburger-menu {
 
 header .nav-collapse .hamburger-menu .menu {
   display: inline-flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
+  flex-flow: column wrap;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -643,11 +639,9 @@ header .text .header-text button:hover {
 
 .solutions .img {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -667,9 +661,7 @@ header .text .header-text button:hover {
 
 .solutions .img-pre {
   display: inline-flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: flex-start;
 }
@@ -797,5 +789,190 @@ header .text .header-text button:hover {
 
 .map table tr:hover {
   background-color: #f7f1f1;
+}
+
+.subscribe {
+  padding-top: 4rem;
+}
+
+.subscribe .rel {
+  position: relative;
+}
+
+.subscribe .main-head {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  color: #0c6c44;
+}
+
+.subscribe .up {
+  position: absolute;
+  right: -7%;
+  top: 0;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-iteration-count: linear;
+}
+
+.subscribe .down {
+  position: absolute;
+  right: -16.5%;
+}
+
+.subscribe .input {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.subscribe .input input {
+  width: 95%;
+  font-family: Red Hat Display;
+  font-weight: normal;
+  color: #616060;
+  background-color: #f9f7f7;
+  border: 0.5rem solid #f9f7f7;
+  border-radius: 2rem;
+  padding: 0.6rem 2.2rem 0.6rem 19%;
+}
+
+.subscribe .input input:focus {
+  outline: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .subscribe .input input {
+    padding-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .subscribe .input input {
+    padding-left: 23%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .subscribe .input input {
+    padding-left: 30%;
+  }
+}
+
+.subscribe .input button {
+  width: 18%;
+  position: absolute;
+  left: 2.4rem;
+  font-family: Red Hat Display;
+  font-weight: normal;
+  color: #f7f1f1;
+  text-transform: capitalize;
+  text-align: center;
+  background-color: #fb4c47;
+  border: 0;
+  border-radius: 2rem;
+  padding: 0.6rem 2.2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .subscribe .input button {
+    left: 2rem;
+    padding: 0.6rem 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .subscribe .input button {
+    left: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .subscribe .input button {
+    width: 22%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .subscribe {
+    display: none;
+  }
+}
+
+footer {
+  margin-top: 3rem;
+}
+
+footer .link {
+  height: 100%;
+}
+
+footer .link a {
+  color: #035755;
+  font-family: Red Hat Display;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  transition: 0.2s ease-in-out;
+}
+
+footer .link a:hover {
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 992px) {
+  footer .link {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  footer .link a {
+    margin: 0 1.5rem;
+  }
+}
+
+footer .fab {
+  height: 100%;
+  justify-content: flex-end;
+}
+
+footer .fab img {
+  margin: 0 .5rem;
+}
+
+@media screen and (max-width: 992px) {
+  footer .fab {
+    justify-content: space-between;
+  }
+}
+
+footer .brand {
+  cursor: pointer;
+}
+
+footer .brand .name {
+  display: inline-block;
+  margin: 0 0.3rem;
+  font-family: Red Hat Display;
+  font-weight: bold;
+  font-size: 1em;
+  color: #035755;
+  text-align: justify;
+}
+
+footer .content {
+  font-family: Red Hat Display;
+  font-size: 12px;
+  text-align: center;
+  color: #415e56;
+  margin: 0.5rem 0 0;
+  word-spacing: 2px;
 }
 /*# sourceMappingURL=main.css.map */

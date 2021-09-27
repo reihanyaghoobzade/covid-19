@@ -486,3 +486,130 @@ header {
         }
     }
 }
+
+.subscribe {
+    @extend %main-head;
+    padding-top: 4rem;
+    .rel {
+        position: relative;
+    }
+    .main-head {
+        @include flex-1(center, center);
+        color: $main-head;
+    }
+    .up {
+        position: absolute;
+        right: -7%;
+        top: 0;
+        animation-name: rotate;
+        animation-duration: 10s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-iteration-count: linear;
+    }
+    .down {
+        position: absolute;
+        right: -16.5%;
+    }
+    .input {
+        @include flex-1(center, center);
+        position: relative;
+        width: 100%;
+        input {
+            &:focus {
+                outline: 0;
+            }
+            width: 95%;
+            font-family: $rhd-font;
+            font-weight: normal;
+            color: $dark-color;
+            background-color: lighten($light-color, 1%);
+            border: 0.5rem solid lighten($light-color, 1%);
+            border-radius: 2rem;
+            padding: 0.6rem 2.2rem 0.6rem 19%;
+            @media only screen and (max-width: 992px) {
+                padding-left: 20%;
+            }
+            @media only screen and (max-width: 650px) {
+                padding-left: 23%;
+            }
+            @media only screen and (max-width: 500px) {
+                padding-left: 30%;
+            }
+        }
+        button {
+            width: 18%;
+            position: absolute;
+            left: 2.4rem;
+            font-family: $rhd-font;
+            font-weight: normal;
+            color: $bg-color;
+            text-transform: capitalize;
+            text-align: center;
+            background-color: $nvt;
+            border: 0;
+            border-radius: 2rem;
+            padding: 0.6rem 2.2rem;
+            @media only screen and (max-width: 1200px) {
+                left: 2rem;
+                padding: 0.6rem 1.7rem;
+            }
+            @media only screen and (max-width: 1000px) {
+                left: 1.7rem;
+            }
+            @media only screen and (max-width: 500px) {
+                width: 22%;
+            }
+        }
+    }
+    @media screen and(max-width: 420px) {
+        display: none;
+    }
+}
+
+footer {
+    margin-top: 3rem;
+    .link {
+        height: 100%;
+        a {
+            @include reset-a;
+            margin: 0 1rem;
+            transition: 0.2s ease-in-out;
+            &:hover {
+                letter-spacing: 2px;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            @include flex-1(flex-end, center);
+            a {
+                margin: 0 1.5rem;
+            }
+        }
+    }
+    .fab {
+        height: 100%;
+        img {
+            margin: 0 .5rem;
+        }
+        justify-content: flex-end;
+        @media screen and (max-width: 992px) {
+            justify-content: space-between;
+        }
+    }
+    .brand {
+        cursor: pointer;
+        .name {
+            display: inline-block;
+            margin: 0 0.3rem;
+            @include header(bold, 1em, $header-color);
+        }
+    }
+    .content {
+        font-family: $rhd-font;
+        font-size: 12px;
+        text-align: center;
+        color: $content-color;
+        margin: 0.5rem 0 0;
+        word-spacing: 2px;
+    }
+}
