@@ -1,9 +1,6 @@
 @font-face {
-  font-family: Red Hat Display;
-  src: url("../fonts/RedHatDisplay-Bold.ttf");
-  src: url("../fonts/RedHatDisplay-Black.ttf");
-  src: url("../fonts/RedHatDisplay-Medium.ttf");
-  src: url("../fonts/RedHatDisplay-Regular.ttf");
+  font-family: AIranianSans;
+  src: url("../font/AIranianSans.ttf");
 }
 
 @keyframes scale {
@@ -11,7 +8,7 @@
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(0, 600%);
+    transform: translate(0, 550%);
   }
 }
 
@@ -25,20 +22,16 @@
 }
 
 .contagion .text .sub-header, .symptomps .text .sub-header, .solutions .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #fa5652;
   text-align: justify;
 }
 
-.contagion .text .sub-header span, .symptomps .text .sub-header span, .solutions .text .sub-header span, header .text .header-text .sub-header span, .about-us .text .sub-header span {
-  font-weight: bold;
-}
-
 @media only screen and (max-width: 1200px) {
   .contagion .text .sub-header, .symptomps .text .sub-header, .solutions .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
-    font-family: Red Hat Display;
+    font-family: AIranianSans;
     font-weight: bold;
     font-size: 1em;
     color: #fa5652;
@@ -48,7 +41,7 @@
 
 @media only screen and (max-width: 1100px) {
   .contagion .text .sub-header, .symptomps .text .sub-header, .solutions .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
-    font-family: Red Hat Display;
+    font-family: AIranianSans;
     font-weight: bold;
     font-size: 0.9em;
     color: #fa5652;
@@ -58,7 +51,7 @@
 
 @media only screen and (max-width: 1000px) {
   .contagion .text .sub-header, .symptomps .text .sub-header, .solutions .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
-    font-family: Red Hat Display;
+    font-family: AIranianSans;
     font-weight: bold;
     font-size: 1.5em;
     color: #fa5652;
@@ -68,7 +61,7 @@
 
 @media only screen and (max-width: 600px) {
   .contagion .text .sub-header, .symptomps .text .sub-header, .solutions .text .sub-header, header .text .header-text .sub-header, .about-us .text .sub-header {
-    font-family: Red Hat Display;
+    font-family: AIranianSans;
     font-weight: bold;
     font-size: 1em;
     color: #fa5652;
@@ -77,9 +70,9 @@
 }
 
 .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head, .subscribe .main-head {
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   color: #035755;
   text-align: justify;
   margin-bottom: 2rem;
@@ -87,7 +80,7 @@
 
 @media only screen and (max-width: 1000px) {
   .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head, .subscribe .main-head {
-    font-family: Red Hat Display;
+    font-family: AIranianSans;
     font-weight: bold;
     font-size: 2.3rem;
     color: #035755;
@@ -98,7 +91,7 @@
 
 @media only screen and (max-width: 600px) {
   .contagion .text .main-head, .symptomps .text .main-head, .solutions .text .main-head, header .text .header-text .main-head, .about-us .text .main-head, .contagion-card .main-head, .solutions .img-pre .main-head, .subscribe .main-head {
-    font-family: Red Hat Display;
+    font-family: AIranianSans;
     font-weight: bold;
     font-size: 1.5rem;
     color: #035755;
@@ -108,7 +101,7 @@
 }
 
 .contagion .text .content, .symptomps .text .content, .solutions .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content, .solutions .img-pre .content {
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   font-weight: normal;
   font-size: 0.8em;
   color: #616060;
@@ -117,13 +110,9 @@
   word-spacing: 0.2rem;
 }
 
-.contagion .text .content span, .symptomps .text .content span, .solutions .text .content span, header .text .header-text .content span, .about-us .text .content span, .contagion-card .content span, .solutions .img-pre .content span {
-  text-transform: uppercase;
-}
-
 @media only screen and (max-width: 1200px) {
   .contagion .text .content, .symptomps .text .content, .solutions .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content, .solutions .img-pre .content {
-    font-family: Red Hat Display;
+    font-family: AIranianSans;
     font-weight: normal;
     font-size: 0.8em;
     color: #616060;
@@ -133,7 +122,7 @@
 
 @media only screen and (max-width: 1000px) {
   .contagion .text .content, .symptomps .text .content, .solutions .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content, .solutions .img-pre .content {
-    font-family: Red Hat Display;
+    font-family: AIranianSans;
     font-weight: normal;
     font-size: 0.9em;
     color: #616060;
@@ -143,7 +132,7 @@
 
 @media only screen and (max-width: 600px) {
   .contagion .text .content, .symptomps .text .content, .solutions .text .content, header .text .header-text .content, .about-us .text .content, .contagion-card .content, .solutions .img-pre .content {
-    font-family: Red Hat Display;
+    font-family: AIranianSans;
     font-weight: bold;
     font-size: 0.7em;
     color: #616060;
@@ -159,7 +148,7 @@
 }
 
 .contagion .text, .symptomps .text, .solutions .text {
-  width: 33vw;
+  width: 50vw;
   height: auto;
 }
 
@@ -283,7 +272,7 @@ header .nav-collapse .navigation .navbar-list .navbar-link {
 
 header .nav-collapse .navigation .navbar-list .navbar-link a {
   color: #035755;
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   text-decoration: none;
   text-transform: capitalize;
   color: #fb4c47;
@@ -297,7 +286,7 @@ header .nav-collapse .navigation .navbar-list .navbar-link a:hover {
 header .nav-brand .name {
   margin: 0 0.3rem;
   cursor: pointer;
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   font-weight: bold;
   font-size: 1em;
   color: #035755;
@@ -316,10 +305,16 @@ header .nav-brand .logo {
   }
 }
 
+@media only screen and (max-width: 560px) {
+  header .nav-brand .logo {
+    margin: 0;
+  }
+}
+
 header .nav-brand .logo .name {
   margin: 0 0.3rem;
   cursor: pointer;
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   font-weight: bold;
   font-size: 1em;
   color: #035755;
@@ -351,7 +346,7 @@ header .nav .active::before {
 header .nav a {
   margin: 0 0.8rem;
   color: #035755;
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   text-decoration: none;
   text-transform: capitalize;
   transition: 0.2s ease-in-out;
@@ -369,7 +364,7 @@ header .nav a:hover {
 header .nav button {
   color: #ff483d;
   background-color: #f7f1f1;
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   text-transform: capitalize;
   border: 1px solid #ff483d;
   border-radius: 2.5rem;
@@ -384,19 +379,13 @@ header .nav button:hover {
   letter-spacing: 1px;
 }
 
-@media only screen and (max-width: 1200px) {
-  header .text {
-    order: 10;
-  }
-}
-
 header .text .header-text {
   margin-left: 4rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 1200px) {
   header .text .header-text .main-head {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -404,7 +393,7 @@ header .text .header-text .content {
   margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 991px) {
   header .text .header-text {
     margin: 0;
     margin-top: 1rem;
@@ -412,7 +401,7 @@ header .text .header-text .content {
 }
 
 header .text .header-text button {
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   font-weight: bold;
   color: #f7f1f1;
   text-transform: capitalize;
@@ -443,6 +432,12 @@ header .text .header-text button:hover {
   margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 991px) {
+  .about-us .order {
+    order: 2;
+  }
+}
+
 .about-us .text {
   position: relative;
 }
@@ -452,7 +447,7 @@ header .text .header-text button:hover {
 }
 
 .about-us .text button {
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   color: #fa5652;
   font-weight: bold;
   background-color: rgba(250, 86, 82, 0.15);
@@ -486,10 +481,10 @@ header .text .header-text button:hover {
 }
 
 .about-us .image .img-1 {
-  top: -22vh;
-  right: -8vw;
-  width: 150px;
-  height: 150px;
+  top: -10vh;
+  right: -9vw;
+  width: 120px;
+  height: 120px;
   animation-name: rotate;
   animation-duration: 10s;
   animation-direction: alternate;
@@ -498,17 +493,17 @@ header .text .header-text button:hover {
 }
 
 .about-us .image .img-2 {
-  width: 150px;
+  width: 120px;
   right: -9vw;
   bottom: -20vh;
 }
 
-.contagion .d-flex {
+.contagion .rel {
   position: relative;
 }
 
-@media screen and (max-width: 992px) {
-  .contagion .d-flex {
+@media screen and (max-width: 1200px) {
+  .contagion .rel {
     align-items: center;
   }
 }
@@ -528,12 +523,12 @@ header .text .header-text button:hover {
 .contagion-card {
   background-color: #f7f4f4;
   border-radius: 0.5rem;
+  padding: 2.5rem;
+  margin: 1rem 0;
   width: 100%;
   height: 100%;
   transition: box-shadow 0.5s 0.1s ease-in-out;
   box-shadow: 3px 0 5px 1px #ededed, -3px 0 5px 1px #ededed;
-  padding: 2.5rem;
-  margin: 1rem 0;
 }
 
 .contagion-card:hover {
@@ -541,14 +536,9 @@ header .text .header-text button:hover {
 }
 
 .contagion-card .main-head {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   text-align: center;
-  margin-top: 1rem;
-}
-
-.contagion-card .content {
-  text-align: center;
-  width: 90%;
+  margin-top: 2rem;
 }
 
 .contagion .image img {
@@ -561,12 +551,6 @@ header .text .header-text button:hover {
   animation-direction: alternate;
   animation-iteration-count: infinite;
   z-index: -10;
-}
-
-@media screen and (max-width: 1150px) {
-  .contagion .image img {
-    left: 6%;
-  }
 }
 
 .symptomps {
@@ -591,7 +575,7 @@ header .text .header-text button:hover {
 }
 
 .solutions .circle {
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   font-weight: bold;
   font-size: 1.5rem;
   color: #fa5652;
@@ -599,7 +583,7 @@ header .text .header-text button:hover {
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 0;
+  top: -.5vh;
   right: -7vw;
   background-color: #fdb7b5;
   border-radius: 50%;
@@ -687,7 +671,7 @@ header .text .header-text button:hover {
 
 .map .btns {
   position: absolute;
-  right: 0;
+  right: 2vw;
 }
 
 .map .btns button {
@@ -709,7 +693,7 @@ header .text .header-text button:hover {
 
 .map .search {
   position: absolute;
-  left: 0;
+  left: 2vw;
 }
 
 .map .search button {
@@ -719,7 +703,7 @@ header .text .header-text button:hover {
   border-radius: 0.2rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .map .order {
     order: 1;
   }
@@ -729,10 +713,11 @@ header .text .header-text button:hover {
   background-color: #f7f4f4;
   border-radius: 0.1rem;
   height: 100%;
+  padding: 1rem;
 }
 
 .map .countries p {
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   font-weight: bold;
   font-size: 1.5rem;
   color: #035755;
@@ -780,7 +765,7 @@ header .text .header-text button:hover {
 }
 
 .map table tr td:nth-child(2), .map table tr td:nth-child(3) {
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   font-weight: bold;
   font-size: 0.8rem;
   color: #035755;
@@ -834,7 +819,7 @@ header .text .header-text button:hover {
 
 .subscribe .input input {
   width: 95%;
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   font-weight: normal;
   color: #616060;
   background-color: #f9f7f7;
@@ -869,7 +854,7 @@ header .text .header-text button:hover {
   width: 18%;
   position: absolute;
   left: 2.4rem;
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   font-weight: normal;
   color: #f7f1f1;
   text-transform: capitalize;
@@ -915,7 +900,7 @@ footer .link {
 
 footer .link a {
   color: #035755;
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   text-decoration: none;
   text-transform: capitalize;
   margin: 0 1rem;
@@ -923,7 +908,7 @@ footer .link a {
 }
 
 footer .link a:hover {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 992px) {
@@ -960,7 +945,7 @@ footer .brand {
 footer .brand .name {
   display: inline-block;
   margin: 0 0.3rem;
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   font-weight: bold;
   font-size: 1em;
   color: #035755;
@@ -968,7 +953,7 @@ footer .brand .name {
 }
 
 footer .content {
-  font-family: Red Hat Display;
+  font-family: AIranianSans;
   font-size: 12px;
   text-align: center;
   color: #415e56;

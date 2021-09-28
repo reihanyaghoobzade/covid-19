@@ -85,6 +85,9 @@ header {
                 margin-left: 1rem;
                 justify-content: flex-end !important;
             }
+            @media only screen and (max-width: 560px) {
+                margin: 0;
+            }
             .name {
                 margin: 0 0.3rem;
                 cursor: pointer;
@@ -140,23 +143,20 @@ header {
         }
     }
     .text {
-        @media only screen and (max-width: 1200px) {
-            order: 10;
-        }
         .header-text {
             @extend %sub-header;
             @extend %main-head;
             @extend %content;
             margin-left: 4rem;
             .main-head {
-                @media only screen and (min-width: 992px) {
-                    font-size: 2rem;
+                @media only screen and (max-width: 1200px) {
+                    font-size: 1.8rem;
                 }
             }
             .content {
                 margin-bottom: 1rem;
             }
-            @media only screen and (max-width: 1200px) {
+            @media only screen and (max-width: 991px) {
                 margin: 0;
                 margin-top: 1rem;
             }
@@ -186,6 +186,11 @@ header {
 
 .about-us {
     margin-bottom: 2rem;
+    .order {
+        @media only screen and (max-width: 991px) {
+            order: 2;
+        }
+    }
     .text {
         @extend %sub-header;
         @extend %main-head;
@@ -222,10 +227,10 @@ header {
             z-index: -10;
         }
         .img-1 {
-            top: -22vh;
-            right: -8vw;
-            width: 150px;
-            height: 150px;
+            top: -10vh;
+            right: -9vw;
+            width: 120px;
+            height: 120px;
             animation-name: rotate;
             animation-duration: 10s;
             animation-direction: alternate;
@@ -233,7 +238,7 @@ header {
             animation-iteration-count: linear;
         }
         .img-2 {
-            width: 150px;
+            width: 120px;
             right: -9vw;
             bottom: -20vh;
         }
@@ -242,9 +247,9 @@ header {
 
 .contagion {
     @extend %center-header;
-    .d-flex {
+    .rel {
         position: relative;
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1200px) {
             align-items: center;
         }
     }
@@ -264,6 +269,8 @@ header {
         @extend %content;
         background-color: $light-color;
         border-radius: 0.5rem;
+        padding: 2.5rem;
+        margin: 1rem 0;
         width: 100%;
         height: 100%;
         transition: box-shadow 0.5s 0.1s ease-in-out;
@@ -271,17 +278,11 @@ header {
         &:hover {
             box-shadow: 3px 3px 20px 6px lighten($dark-color, 50%), -3px -3px 20px 6px lighten($dark-color, 50%);
         }
-        padding: 2.5rem;
         .main-head {
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             text-align: center;
-            margin-top: 1rem;
+            margin-top: 2rem;
         }
-        .content {
-            text-align: center;
-            width: 90%;
-        }
-        margin: 1rem 0;
     }
     .image {
         img {
@@ -289,9 +290,6 @@ header {
             height: 10em;
             top: 70%;
             left: 7%;
-            @media screen and(max-width: 1150px) {
-                left: 6%;
-            }
             animation-name: rotate;
             animation-duration: 10s;
             animation-direction: alternate;
@@ -326,7 +324,7 @@ header {
         position: absolute;
         width: 50px;
         height: 50px;
-        top: 0;
+        top: -.5vh;
         right: -7vw;
         background-color: lighten($sub-header-color, 20%);
         border-radius: 50%;
@@ -404,7 +402,7 @@ header {
     }
     .btns {
         position: absolute;
-        right: 0;
+        right: 2vw;
         button {
             background-color: $light-color;
             border: 0;
@@ -422,7 +420,7 @@ header {
     }
     .search {
         position: absolute;
-        left: 0;
+        left: 2vw;
         button {
             padding: 0.3rem;
             background-color: $light-color;
@@ -431,7 +429,7 @@ header {
         }
     }
     .order {
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 991px) {
             order: 1;
         }
     }
@@ -440,6 +438,7 @@ header {
         background-color: $light-color;
         border-radius: 0.1rem;
         height: 100%;
+        padding: 1rem;
         p {
             @include header(bold, 1.5rem, $header-color);
             display: inline-block;
@@ -576,7 +575,7 @@ footer {
             margin: 0 1rem;
             transition: 0.2s ease-in-out;
             &:hover {
-                letter-spacing: 2px;
+                letter-spacing: 1px;
             }
         }
         @media screen and (max-width: 992px) {

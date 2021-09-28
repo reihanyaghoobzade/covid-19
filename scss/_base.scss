@@ -8,13 +8,10 @@ $light-pink: rgba(250, 86, 82, 0.15);
 $main-head: #0c6c44;
 $content-color: #415e56;
 $light-color: rgb(247, 244, 244);
-$rhd-font: Red Hat Display;
+$rhd-font: AIranianSans;
 @font-face {
-    font-family: Red Hat Display;
-    src: url("../fonts/RedHatDisplay-Bold.ttf");
-    src: url("../fonts/RedHatDisplay-Black.ttf");
-    src: url("../fonts/RedHatDisplay-Medium.ttf");
-    src: url("../fonts/RedHatDisplay-Regular.ttf");
+    font-family: AIranianSans;
+    src: url("../font/AIranianSans.ttf");
 }
 
 @keyframes scale {
@@ -22,7 +19,7 @@ $rhd-font: Red Hat Display;
         transform: translate(0, 0);
     }
     100% {
-        transform: translate(0, 600%);
+        transform: translate(0, 550%);
     }
 }
 
@@ -71,15 +68,10 @@ $color) {
 %sub-header {
     .sub-header {
         @include header(bold,
-        1.2em,
+        1em,
         $sub-header-color);
-        span {
-            font-weight: bold;
-        }
         @media only screen and (max-width: 1200px) {
-            @include header(bold,
-            1em,
-            $sub-header-color);
+            @include header(bold, 1em, $sub-header-color);
         }
         @media only screen and (max-width: 1100px) {
             @include header(bold,
@@ -102,7 +94,7 @@ $color) {
 %main-head {
     .main-head {
         @include header(bold,
-        2.5rem,
+        2.1rem,
         $header-color);
         margin-bottom: 2rem;
         @media only screen and (max-width: 1000px) {
@@ -125,13 +117,8 @@ $color) {
         $dark-color);
         line-height: 2rem;
         word-spacing: 0.2rem;
-        span {
-            text-transform: uppercase;
-        }
         @media only screen and (max-width: 1200px) {
-            @include header(normal,
-            0.8em,
-            $dark-color);
+            @include header(normal, 0.8em, $dark-color);
         }
         @media only screen and (max-width: 1000px) {
             @include header(normal,
@@ -155,7 +142,7 @@ $color) {
         @extend %sub-header;
         @extend %main-head;
         @extend %content;
-        width: 33vw;
+        width: 50vw;
         @media screen and(max-width: 992px) {
             width: 70%;
         }
